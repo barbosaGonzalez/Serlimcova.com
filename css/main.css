@@ -1,0 +1,85 @@
+/* variables*/
+@import "./colores.css";
+/* fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.bgPrimaryColor{
+    background-color: var(--primaryColor) !important;
+}
+
+.bgSecundaryColor{
+    background-color: var(--secundaryColor) !important;
+}
+.colorPrimary{
+    color: var(--primaryColor) !important;
+}
+.borderColorPrimary{
+    border-color: var(--primaryColor) !important;
+}
+.text-Justify{
+    text-align: justify;
+}
+ 
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+
+  background-color: var(--primaryColor);/* color of the scroll thumb */
+  border-radius: 100px;       /* roundness of the scroll thumb */
+  border: 15px solid var(--primaryColor);  /* creates padding around scroll thumb */
+}
+#bgNosotros{
+    background: url("../img/panorama-2405958_640.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 1.5rem 0rem;
+    padding: 9rem 1rem;
+}
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+#scrollToTop{
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 18%;
+    right: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+}
+#scrollToTop.show {
+    opacity: 0.5;
+    visibility: visible;
+}
+.hoverGrow{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hoverGrow:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
